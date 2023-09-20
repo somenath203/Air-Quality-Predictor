@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { NavLink } from "react-router-dom";
 import Tippy from '@tippyjs/react';
@@ -31,7 +32,7 @@ const Navbar = () => {
               </NavLink>
             </Tippy>
             <Tippy content='Github link of the project'>
-              <a className="mr-5 text-green-800 hover:text-green-700 cursor-pointer animate duration-100">
+              <a className="mr-5 text-green-800 hover:text-green-700 cursor-pointer animate duration-100" href="https://github.com/somenath203/Air-Quality-Predictor" target="_blank">
                 <i className="fa-brands fa-github text-xl lg:text-3xl"></i>
               </a>
             </Tippy>
