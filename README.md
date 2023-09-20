@@ -3,13 +3,14 @@
 ## Contents
 
 - [Introduction](#Introduction)
+- [Purpose of the Project](#Purpose-of-the-Project)
 - [Components of the Project](#Components-of-the-Project)
 - [About the Frontend of the Project](#About-the-Frontend-of-the-Project)
 - [About the Backend of the Project](#About-the-Backend-of-the-Project)
 - [About the Machine Learning Model](#About-the-Machine-Learning-Model)
 - [Deployment](#Deployment)
 - [Links](#Links)
-
+- [Warning](#Warning)
 
 
 ## Introduction 
@@ -18,6 +19,10 @@ Air Quality Predictor is a machine learning project designed to help you forecas
 With this project, you can accurately predict the concentration of PM2.5 particles (particulate matter with a diameter of 2.5 micrometers or smaller) in the air, enabling better environmental monitoring 
 and informed decision-making.
 
+## Purpose of the Project
+
+The purpose of the Air Quality Predictor project is to empower individuals and organizations with a web based A.I. application for understanding and forecasting air quality. By predicting PM2.5 levels, individuals can take measures to safeguard their health which includes making informed decisions about outdoor activities, adjusting indoor ventilation, and taking necessary precautions when air quality deteriorates. Besides this, the environmental agencies and researchers can utilize our project to track and analyze air quality trends over time.
+
 
 ## Components of the Project
 
@@ -25,42 +30,41 @@ The project is divided into three parts: Frontend, Backend and the Machine Learn
 
 ## About the Frontend of the Project
 
-The frontend of the project is built with ReactJS and TailwindCSS. It allows users to make predictions about their risk of suicide or depression using voice-to-text technology. Here, the user have
-to speak through there mic and then, when the user has finished speaking, all the words spoke by the user will be displayed in the textarea. The user can then submit the response to get the desired prediction and the result of the prediction will be shown in the form of a sweetalert modal.
+The frontend of the project is built with ReactJS and TailwindCSS. It allows users to make predictions about the quality of air by sending input to the machine learning model via the backend api from the frontend.
 
 ## About the Backend of the Project
 
-The backend of this project is created with the help of FastAPI. After the user clicks on Submit Button in the frontend, the response is send to the FastAPI via axios and then FastAPI forwards this response to the machine 
-learning model for the prediction
+The backend of this project is created with the help of FastAPI. After the user clicks on Submit Button in the frontend, the request is send to the FastAPI via axios and then FastAPI forwards this request to the machine learning model to make the prediction.
 
 ## About the Machine Learning Model
 
-The machine learning model of this project is created with the help of Support Vector Classifier. The accuracy on training data is around 95% while the accuracy on test data is around 90% and the model is trained 
-on a dataset of 10,000 datapoints where 5000 datapoints belong to the category of 'suicical/depression thoughts' and the other 5000 datapoints belong to the category of 'non suicical/depression thoughts'.
+The machine learning model of this project is trained on 8000 datapoints. I tried 3 different regression models for this project namely **LinearRegression**, **RandomForestRegressor** and **KNeighborsRegressor**. After implementing the three models, I found the accuracy scores on training and testing data for the 3 models as follows:
+
+| Model Name | Training Accuracy | Testing Accuracy |
+|----------|----------|----------|
+| Linear Regression | 0.051812	 | 0.042505 |
+| Random Forest Regressor | 0.987630 | 0.916692 |
+| K Neighbors Regressor | 0.940275 | 0.862848 |
+
+After observing the accuracies, I finally chose Random Forest Regressor as my final model it has performed well on both training and testing accuracy.
 
 ## Deployment
 
-The frontend of the project is deployed in Vercel whereas the backend of the project is deployed in Render with the help of Docker.
+The frontend of the project is deployed in Vercel whereas the backend of the project is deployed in Render.
 
 ## Links
 
-Live preview of the project: https://suicidal-thought-and-depression-predictor-frontend.vercel.app/
+Live preview of the project: https://air-quality-predictor.vercel.app/
 
-Link to the deployed API of the project: https://suicidal-thought-depression-predictor.onrender.com/
+Link to the deployed API of the project: https://pred-air-quality-back.onrender.com/
 
-Link to the swagger documentation of the backend API of the project: https://suicidal-thought-depression-predictor.onrender.com/docs
+Link to the swagger documentation of the backend API of the project: https://pred-air-quality-back.onrender.com/docs
 
-Link to the jupyter notebook of the machine learning model: https://github.com/somenath203/Suicide-Depression-Predictor/blob/main/backend/suicide_depression_classification_kmeans.ipynb
+Link to the jupyter notebook of the machine learning model: https://github.com/somenath203/air-quality-predictor-backend/blob/main/air_quality.ipynb
 
-Link to the dataset used to train the machine learning model: https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch
-
-## Contributions
-
-I have designed the entire frontend of this project whereas my teammate Vishal Lazrus created the entire backend FastAPI and the machine learning model.
+Link to the dataset used to train the machine learning model: https://www.kaggle.com/datasets/fedesoriano/air-quality-data-in-india
 
 ## Warning
 
-Although the model is able to classify between 'suicical/depression thoughts' and 'non suicical/depression thoughts', but, since, it is only trained on a small dataset of only 10,000 datapoints, therefore,
-there is a chance that, in some cases, the model might make wrong predictions.
-
-
+Although the model is able to correctly predict the concentration of PM2.5 particles in air, but, since, it is only trained on a small dataset of only 8,000 datapoints, therefore,
+there is chance that, in some cases, the model might make wrong predictions.
