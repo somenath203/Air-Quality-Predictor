@@ -51,14 +51,14 @@ After observing the accuracies, I finally chose Random Forest Regressor as my fi
 
 ## Installation and Usage
 
-#### Step 1:
+### Step 1:
 In order to run this project locally, we first need to NodeJS and Python installed in our system.
 
 Link to download NodeJS: https://nodejs.org/en
 
 Link to download Python: https://www.python.org/
 
-#### Step 2:
+### Step 2:
 
 After downloading the above two softwares, we need to clone the project. In order to clone the project, execute the following command:
 
@@ -66,7 +66,7 @@ After downloading the above two softwares, we need to clone the project. In orde
 git clone https://github.com/somenath203/Air-Quality-Predictor.git
 ```
 
-#### Step 3:
+### Step 3:
 
 After you have cloned the project, open command prompt(CMD) inside the frontend folder and execute the following command
 
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 This command will installed all the necessary dependencies required to run the backend application.
 
-#### Step 4:
+### Step 4:
 
 After all the necessary dependencies are installed inside the two folders, open the command prompt again inside the frontend folder and execute the following command:
 
