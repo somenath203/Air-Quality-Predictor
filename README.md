@@ -62,7 +62,7 @@ Link to download Python: https://www.python.org/
 
 After downloading the above two softwares, we need to clone the project. In order to clone the project, execute the following command:
 
-```git
+```
 git clone https://github.com/somenath203/Air-Quality-Predictor.git
 ```
 
@@ -70,13 +70,13 @@ git clone https://github.com/somenath203/Air-Quality-Predictor.git
 
 After you have cloned the project, open command prompt(CMD) inside the frontend folder and execute the following command
 
-```javascript
+```
 npm i
 ```
 
 After all the dependencies inside the frontend folder is successfully downloaded, open terminal inside the backend folder and execute the following command:
 
-```python
+```
 pip install -r requirements.txt
 ```
 
@@ -86,7 +86,7 @@ This command will installed all the necessary dependencies required to run the b
 
 After all the necessary dependencies are installed inside the two folders, open the command prompt again inside the frontend folder and execute the following command:
 
-```js
+```
 npm start
 ```
 
@@ -94,7 +94,7 @@ This will start the development server of the React Application.
 
 After this, open open the command prompt inside the backend folder and execute the following command:
 
-```py
+```
 uvicorn app:app --reload
 ```
 
@@ -103,7 +103,7 @@ This will start the development server of the fastAPI.
 ### Step 5(Final Step):
 In order to connect the fastapi backend with the react frontend, create a `.env` file in the root directory of the project and paste the following line:
 
-```env
+```
 REACT_APP_FASTAPI_BACKEND=http://localhost:8000/predict
 ```
 Here, I have assumed that the development server of FastAPI is running on PORT 8000. If your fastapi server is running on a different port, then, just replace 8000 with the port number and then, you are ready to go.
