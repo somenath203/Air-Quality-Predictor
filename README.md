@@ -52,7 +52,7 @@ After observing the accuracies, I finally chose Random Forest Regressor as my fi
 ## Installation and Usage
 
 ### Step 1:
-In order to run this project locally, we first need to NodeJS and Python installed in our system.
+In order to run this project locally, you first need to NodeJS and Python installed in our system.
 
 Link to download NodeJS: https://nodejs.org/en
 
