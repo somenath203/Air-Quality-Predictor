@@ -70,13 +70,13 @@ git clone https://github.com/somenath203/Air-Quality-Predictor.git
 
 After you have cloned the project, open command prompt(CMD) inside the frontend folder and execute the following command
 
-```js
+```javascript
 npm i
 ```
 
 After all the dependencies inside the frontend folder is successfully downloaded, open terminal inside the backend folder and execute the following command:
 
-```py
+```python
 pip install -r requirements.txt
 ```
 
