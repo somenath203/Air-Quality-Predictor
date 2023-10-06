@@ -19,8 +19,8 @@ const Page = () => {
               library. The supervised machine learning algorithm used in the
               project is a random forest regressor. The model was trained on a
               dataset of historical air quality data. The accuracy of the model
-              on the training data is around 99% and on testing data, the
-              accuracy is around 96%. With the help of this project, one can predict the PM2.5(Particles with a diameter of 2.5 micrometers or smaller) level in air.
+              on the training data is around 98% and on testing data, the
+              accuracy is around 91%. With the help of this project, one can predict the PM2.5(Particles with a diameter of 2.5 micrometers or smaller) level in air.
             </p>
           </div>
           <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
