@@ -120,7 +120,7 @@ Link to the deployed API of the project: https://pred-air-quality-back.onrender.
 
 Link to the swagger documentation of the backend API of the project: https://pred-air-quality-back.onrender.com/docs
 
-Link to the jupyter notebook of the machine learning model: https://github.com/somenath203/air-quality-predictor-backend/blob/main/air_quality.ipynb
+Link to the jupyter notebook of the machine learning model: https://github.com/somenath203/Air-Quality-Predictor/blob/main/backend/air_quality.ipynb
 
 Link to the dataset used to train the machine learning model: https://www.kaggle.com/datasets/fedesoriano/air-quality-data-in-india
 
