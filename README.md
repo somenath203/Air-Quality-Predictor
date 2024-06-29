@@ -47,7 +47,7 @@ The machine learning model of this project is trained on 8000 datapoints. I trie
 | Random Forest Regressor | 0.987630 | 0.916692 |
 | K Neighbors Regressor | 0.940275 | 0.862848 |
 
-After observing the accuracies, I finally chose Random Forest Regressor as my final model it has performed well on both training and testing accuracy.
+After observing the accuracies, I finally chose Random Forest Regressor as my final model since it has performed well on both training and testing accuracy.
 
 ## Installation and Usage
 
